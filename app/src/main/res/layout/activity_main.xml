@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:hint="city name"
+    android:textColor="@color/white"
+    android:fontFamily="sans-serif-smallcaps"
+    android:textSize="40sp"
+    android:gravity="bottom|center"
+    android:id="@+id/city_name_et"
+    android:background="@color/purple_300"
+    android:textColorHint="@color/white"
+    />
+    <TextView
+        android:id="@+id/temperature"
+        android:hint="temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:textColor="@color/purple_700"
+        android:textColorHint="@color/purple_700"
+
+         />
+    <TextView
+        android:id="@+id/pressure"
+        android:hint="pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/purple_200"
+
+
+         />
+    <TextView
+        android:id="@+id/wind"
+        android:hint="wind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+         />
+
+    <Button
+        android:id="@+id/request_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сделать запрос"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:fontFamily="sans-serif-black"
+         />
+    <TextView
+        android:id="@+id/json_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#C8B61B"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+</LinearLayout>
